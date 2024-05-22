@@ -5,7 +5,6 @@ import Link from "next/link";
 import Button from "./Button";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -83,7 +82,7 @@ const Navbar = () => {
       {/* mobile nav */}
       <MobileMenuButton onClick={handleDrawerToggle} />
       {/* need to implement drawer */}
-      <div className="sm:hidden relative flex flex-row my-4">
+      <div className="xl:hidden relative flex flex-row my-4">
         <MobileDrawer isOpen={isDrawerOpen} onClose={handleDrawerToggle} />
       </div>
     </nav>
